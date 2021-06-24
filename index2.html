@@ -47,7 +47,24 @@
       padding-right: 7px;
       border: 1px solid #ffffff;
       border-radius: 10px;
-
+    }
+    .imgbutton:hover {
+      animation-name: hover;
+      animation-duration: 1s;
+    }
+    .imgbutton {
+      width: 75px;
+      height: 75px;
+      animation-name: hoverrelease;
+      animation-duration: 1s;
+    }
+    @keyframes hover {
+      from {transform: scale(1, 1);}
+      to {transform: scale(1.25, 1.25);}
+    }
+    @keyframes hoverrelease {
+      from {transform: scale(1.25, 1.25);}
+      to {transform: scale(1, 1);}
     }
   </style>
   <head>
@@ -74,6 +91,7 @@
             <p>i have some <a href="downloads.html">mugen content</a> that you can download.</p>
             <p>i also have some <a href="experiments.html">experiments with coding</a> that you can view.</p>
             <p><a href="https://twitter.com/giko_arts">twitter</a><a href="https://www.youtube.com/AustinsAnimationsAndMore">youtube</a></p>
+            
             </td>
           </tr>
         </table><br>
