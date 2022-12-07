@@ -3,14 +3,28 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <script>
+        function toggleDiv(name) {
+            var x = document.getElementById(name)
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        </script>
+    <body onload="toggleDiv('socials'); toggleDiv('art');">
         <div class="main">
             <h1>ace_underscore_</h1>
-            <p>16 years old</p>
+            <p class="alert">hi this site is still under construction</p>
+            <p>16 years old - autistic</p>
             <p>he/they - aromantic/bisexual - <a href="https://en.pronouns.page/@ace_underscore_">click here for more info</a></p>
             <p>artist - video game player - sometimes a pngtuber</p>
-            <button class="btn" onclick="showSocials()">socials</button>
-            <button class="btn" onclick="showArtProcess()">how i make my art</button>
+            <button class="btn" onclick="toggleDiv('socials')">socials</button>
+            <div class="inner1" id='socials'><a href="https://twitter.com/ace_underscore_">twitter</a> - <a href="https://wetdry.world/@ace_underscore">mastodon</a> - <a href="https://www.tumblr.com/ace-underscore">tumblr</a> - <a href="https://giko-ace.newgrounds.com/">newgrounds</a></div>
+            <br>
+            <button class="btn" onclick="toggleDiv('art')">how i make my art</button>
+            <div class="inner1" id='art'><p>i use mspaint and a mouse (Logitech G502 LIGHTSPEED Wireless)</p></div>
             
         </div>
     </body>
