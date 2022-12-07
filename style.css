@@ -21,3 +21,9 @@ body {
     text-align: center;
     padding:50px;
 }
+.btn {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #3d71f5;
+    border: none;
+}
