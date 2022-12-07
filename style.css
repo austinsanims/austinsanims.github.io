@@ -1,6 +1,7 @@
 html {
     margin: 0px;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 body {
     height:100%;
@@ -16,4 +17,5 @@ body {
     width:75%;
     margin:auto;
     text-align: center;
+    padding:50px;
 }
