@@ -1,7 +1,7 @@
 html {
     margin: 0px;
     height: 100%;
-    font-family: Arial, sans-serif;
+    
 }
 body {
     height:100%;
@@ -11,6 +11,8 @@ body {
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
     background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 .main {
     background-color:#171766;
