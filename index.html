@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>ace's place</title>
+        <!-- meta tags -->
+        <meta content="ace_underscore_'s other stuff" property="og:title" />
+        <meta content="i do stuff and things" property="og:description" />
+        <meta content="https://austinsanims.github.io" property="og:url" />
+        <meta content="https://austinsanims.github.io/aceSlayin.png" property="og:image" />
+        <meta content="#171766" data-react-helmet="true" name="theme-color" />
+        <!-- style -->
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); 
+        @keyframes openAnimation {
+            0% {transform: translateY(-50);}
+            100% {transform: translateY(0);}
+        }
+        .menuClosed {
+            display:none;
+        }
+        .menuOpen {
+            display:block;
+            animation: openAnimation 1s ease-in-out forwards;
+        }
+        
+        </style>
     </head>
     <script>
         function toggleDiv(name) {
             var x = document.getElementById(name)
-            if (x.style.display === "none") {
-                x.style.display = "block";
+            if ( x.className.match(/(?:^|\s)menuClosed(?!\S)/) ) {
+                x.className = x.className.replace( /(?:^|\s)menuClosed(?!\S)/g , ' menuOpen' )
+            } else if ( x.className.match(/(?:^|\s)menuOpen(?!\S)/) ) {
+                x.className = x.className.replace( /(?:^|\s)menuOpen(?!\S)/g , ' menuClosed' )
             } else {
-                x.style.display = "none";
+                x.className += ' menuOpen';
             }
         }
         </script>
-    <body onload="toggleDiv('socials'); toggleDiv('art');">
+    <body onload="">
         <div class="main">
             <h1>ace_underscore_</h1>
             <p class="alert">hi this site is still under construction</p>
@@ -21,10 +46,10 @@
             <p>he/they - aromantic/bisexual - <a href="https://en.pronouns.page/@ace_underscore_">click here for more info</a></p>
             <p>artist - video game player - sometimes a pngtuber</p>
             <button class="btn" onclick="toggleDiv('socials')">socials</button>
-            <div class="inner1" id='socials'><a href="https://twitter.com/ace_underscore_">twitter</a> - <a rel="me" href="https://wetdry.world/@ace_underscore">mastodon</a> - <a href="https://www.tumblr.com/ace-underscore">tumblr</a> - <a href="https://giko-ace.newgrounds.com/">newgrounds</a></div>
+            <div class="inner1 menuOpen" id='socials'><a href="https://twitter.com/ace_underscore_">twitter</a> - <a rel="me" href="https://wetdry.world/@ace_underscore">mastodon</a> - <a href="https://www.tumblr.com/ace-underscore">tumblr</a> - <a href="https://giko-ace.newgrounds.com/">newgrounds</a></div>
             <br>
             <button class="btn" onclick="toggleDiv('art')">how i make my art</button>
-            <div class="inner1" id='art'><p>i use mspaint and a mouse (Logitech G502 LIGHTSPEED Wireless)<br>i commonly use mspaint for everything in my art including the backgrounds, but occasionally i will use paint.net or some other art program.<br>for animation i mostly use scratch, aseprite, and flash cs6/animate in order from most to least used.</p></div>
+            <div class="inner1 menuOpen" id='art'><p>i use mspaint and a mouse (Logitech G502 LIGHTSPEED Wireless)<br>i commonly use mspaint for everything in my art including the backgrounds, but occasionally i will use paint.net or some other art program.<br>for animation i mostly use scratch, aseprite, and flash cs6/animate in order from most to least used.</p></div>
             
         </div>
     </body>

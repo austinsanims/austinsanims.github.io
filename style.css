@@ -11,20 +11,21 @@ body {
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
     color: white;
     margin:0;
     padding:10px;
 }
 .main {
-    background-color:#171766;
+    background-color:#171766d2;
     width:50%;
     margin:auto;
     text-align: center;
     padding:50px;
+    border-radius: 45px;
 }
 .inner1 {
-    background-color:#2f274f;
     width:75%;
     margin-top:5px;
     margin-bottom:5px;
@@ -35,7 +36,6 @@ body {
     
 }
 .btn:hover {
-    font-family: Arial, sans-serif;
     color: white;
     background-color: #507ff6;
     border: none;
@@ -43,7 +43,6 @@ body {
     margin:5px;
 }
 .btn:active {
-    font-family: Arial, sans-serif;
     color: white;
     background-color: #303ebb;
     border: none;
@@ -51,18 +50,21 @@ body {
     margin:5px;
 }
 .btn {
-    font-family: Arial, sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-size: 70px;
     color: white;
     background-color: #3d71f5;
     border: none;
     padding:10px;
     margin:5px;
+    cursor:pointer;
+    border-radius: 45px;
 }
 a:link {
-    color:#3d71f5;
+    color:#5784f5;
 }
 a:visited {
-    color:#481bfe;
+    color:#6640ff;
 }
 a:active {
     color:#64adf7;
